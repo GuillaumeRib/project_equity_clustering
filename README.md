@@ -1,22 +1,24 @@
 # Project Description
-- Name: project_markets_dash
+- Name: project_equity clustering
 
 # Objective
-- Build a multi-page app 
-- Extract, parse, and clean data 
-- Compute stats needed
-- Data Visualization using Plotly
-- Front-End: Plotly Dash app - deployed on render
+Project combines the following main steps:
+* **Wikipedia web-scraping** to collect S&P500 companies' tickers, names and sector information
+* **yfinance stock data extraction** to collect daily prices
+* **Returns computation** for the desired frequency 
+* **Random sampling of stocks** to select the desired subset size
+* **Principle Component Analysis (PCA)**
+* **K-Means Clustering**
+* **Hierarchical Clustering Analysis (HCA)**
+* **Correlation Matrices comparison**
+* **Clusters composition visualization**
+* **Assessment of clustering methods**
+* Appendix: **silhouette and elbow** methods to find optimal k
 
 # Data Source
-- FRED pandas datareader: monthly yields from 3Mth to 30Y US Treasury rates
-- yfinance: daily stock prices of S&P 500 companies
-- wikipedia web scraping for S&P 500 tickers, sectors and sub-industries
-- IVV ETF extraction of weights
+- yfinance: daily stock prices
+- wikipedia web scraping for S&P 500 tickers, and sectors
 
 # Type of analysis
-- Data Analysis / EDA / DataViz / Front-end app
-
-# Live app
-- Please allow c. 20/30sec to launch if the app is on sleep: https://markets-dash.onrender.com/
+- Unsupervised Machine Learning, PCA, K-Means, Hierarchical Clustering
 
